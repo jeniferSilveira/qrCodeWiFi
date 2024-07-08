@@ -1,0 +1,38 @@
+body {
+    font-size: larger;
+    text-align: center;
+    padding-top: 20px; /* Espaçamento no topo */
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+#container {
+    max-width: 400px; /* Largura máxima do container */
+    margin: 0 auto; /* Centralizar o container na página */
+    padding: 20px;
+    background-color: rgb(36, 63, 47); /* Cor de fundo do container */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(253, 251, 251, 0.1); /* Sombra suave */
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Garante que o QR Code ocupe toda a largura disponível */
+    height: 100%; /* Garante que o QR Code ocupe toda a altura disponível */
+}
+
+.qr-container {
+    width: 100%;
+    height: 200px; /* Altura ajustável conforme necessário */
+    margin-top: 20px; /* Espaçamento no topo do container do QR Code */
+}
+
+label.form-label {
+    color: rgb(239, 248, 238); /* Cor do texto dos labels */
+    font-weight: bold; /* Negrito */
+}

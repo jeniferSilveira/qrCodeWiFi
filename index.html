@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/app.css">
+    <title>Gerador de QRCode para WiFi</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Gerador de QRCode para Wi-Fi</h1>
+
+        <div id="container">
+            <div class="mb-3">
+                <label for="ssid" class="form-label">Nome da Rede (SSID):</label>
+                <input type="text" id="ssid" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha:</label>
+                <input type="password" id="senha" class="form-control" required>
+            </div>
+
+            <button id="gerarBtn" class="btn btn-dark">Gerar QRCode</button>
+
+            <!-- Container do QR Code com a classe qr-container -->
+            <div class="qr-container mt-4">
+                <div id="qrcode"></div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="JS/qrcode.js"></script>
+    <script src="https://davidshimjs.github.io/qrcodejs/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>
